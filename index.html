@@ -8,6 +8,7 @@
   <meta name="author" content="Malta Seaman Team">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/favicon.png" type="image/png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,13 +18,8 @@
       padding: 20px;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 28px;
+    h1, h2 {
       margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 22px;
-      margin-top: 30px;
     }
     img {
       max-width: 100%;
@@ -48,13 +44,42 @@
       font-size: 14px;
       color: gray;
     }
+    form {
+      margin-top: 30px;
+      max-width: 500px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004999;
+    }
+    select {
+      margin-bottom: 20px;
+      padding: 6px;
+    }
   </style>
 </head>
 <body>
 
+  <select onchange="window.location.href=this.value">
+    <option value="index.html">🇷🇺 Русский</option>
+    <option value="en.html">🇬🇧 English</option>
+  </select>
+
   <h1>Мальтийский паспорт моряка (Seaman’s Book Malta)</h1>
 
-  <img src="img/promo-malta.png" alt="Промо Мальта">
+  <img src="media/promo-malta.png" alt="Промо Мальта">
 
   <p>Получите международный морской документ — паспорт моряка Республики Мальта. Подходит для украинских моряков, оформляется дистанционно, легально и с доставкой.</p>
 
@@ -68,12 +93,25 @@
 
   <h2>Контакты</h2>
   <p>🇨🇭 Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
-
   <p>
     Telegram: <a href="https://t.me/maltaseamans" target="_blank">t.me/maltaseamans</a><br>
     Instagram: <a href="https://www.instagram.com/maltaseamans/" target="_blank">@maltaseamans</a><br>
     Email: <a href="mailto:info@maltaseaman.com">info@maltaseaman.com</a>
   </p>
+
+  <h2>Карта</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.947!2d8.539183!3d47.370835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0b1e2f1e3f%3A0x2e3f3f3f3f3f3f3f!2sBahnhofstrasse%2010%2C%208001%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1680000000000"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+
+  <h2>Оставить заявку</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Сообщение" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
 
   <footer>© 2025 Мальтийский паспорт моряка</footer>
 

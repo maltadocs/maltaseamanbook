@@ -1,1 +1,136 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Maltesischer Seemannspass – für ukrainische Seeleute</title>
+  <meta name="description" content="Offizielle Ausstellung des maltesischen Seemannspasses für ukrainische Seeleute. Schnell, remote und mit weltweiter Lieferung.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/favicon.png" type="image/png">
+  <style>
+    body {
+      background-color: #0A3D62;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      transition: background-color 0.5s ease;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.3s;
+    }
+    ul, p, form, .social-icons {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    form {
+      margin-top: 30px;
+      max-width: 500px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0077cc;
+    }
+    .social-icons img {
+      width: 32px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    select {
+      margin-bottom: 20px;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <select onchange="window.location.href=this.value">
+    <option value="index.html">🇷🇺 Русский</option>
+    <option value="en.html">🇬🇧 English</option>
+    <option value="de.html">🇩🇪 Deutsch</option>
+  </select>
+
+  <h1>Maltesischer Seemannspass (Seaman’s Book Malta)</h1>
+
+  <img src="media/1malta.png" alt="Malta Promo">
+
+  <p>Erhalten Sie ein internationales Seefahrtsdokument – den Seemannspass der Republik Malta. Geeignet für ukrainische Seeleute, remote ausgestellt, legal und weltweit geliefert.</p>
+
+  <ul>
+    <li>✔️ Internationales Seefahrtsdokument</li>
+    <li>✔️ Legale Ausstellung ohne Reisen</li>
+    <li>✔️ Bearbeitungszeit: 3–5 Wochen</li>
+    <li>✔️ Weltweite Lieferung per Kurier</li>
+    <li>✔️ Unterstützung in allen Phasen</li>
+  </ul>
+
+  <h2>Kontakt</h2>
+  <p>🇨🇭 Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
+  <div class="social-icons">
+    <a href="https://t.me/maltaseamans" target="_blank">
+      <img src="media/telegram.svg" alt="Telegram" width="32">
+    </a>
+    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
+      <img src="media/instagram.svg" alt="Instagram" width="32">
+    </a>
+  </div>
+  <p>Email: <a href="mailto:info@maltaseaman.com">info@maltaseaman.com</a></p>
+
+  <h2>Karte</h2>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.947!2d8.539183!3d47.370835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0b1e2f1e3f%3A0x2e3f3f3f3f3f3f3f!2sBahnhofstrasse%2010%2C%208001%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1680000000000"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+  </iframe>
+
+  <h2>Kontaktformular</h2>
+  <form action="https://formspree.io/f/mgvygdaj" method="POST">
+    <input type="hidden" name="_redirect" value="https://www.maltaseaman.com/thank-you.html">
+    <input type="text" name="name" placeholder

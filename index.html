@@ -14,6 +14,7 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
+      transition: background-color 0.5s ease;
     }
     h1, h2 {
       margin-bottom: 20px;
@@ -22,6 +23,22 @@
       max-width: 100%;
       margin: 20px 0;
       border-radius: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.3s;
+    }
+    ul, p, form, .social-icons {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     ul {
       padding-left: 20px;
@@ -56,6 +73,7 @@
       background-color: #00aaff;
       color: white;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #0077cc;
@@ -76,6 +94,7 @@
   <select onchange="window.location.href=this.value">
     <option value="index.html">🇷🇺 Русский</option>
     <option value="en.html">🇬🇧 English</option>
+    <option value="de.html">🇩🇪 Deutsch</option>
   </select>
 
   <h1>Мальтийский паспорт моряка (Seaman’s Book Malta)</h1>
@@ -112,15 +131,20 @@
 
   <h2>Оставить заявку</h2>
   <form action="https://formspree.io/f/mgvygdaj" method="POST">
+    <input type="hidden" name="_redirect" value="https://www.maltaseaman.com/thank-you.html">
     <input type="text" name="name" placeholder="Ваше имя" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="message" placeholder="Сообщение" required></textarea>
+    <label>
+      <input type="checkbox" required>
+      Я согласен с <a href="privacy.html" target="_blank">политикой конфиденциальности</a>
+    </label>
     <button type="submit">Отправить</button>
   </form>
 
-  <footer>© 2025 Мальтийский паспорт моряка</footer>
+  <footer>
+    © 2025 Malta Seaman Team | <a href="privacy.html">Политика конфиденциальности</a>
+  </footer>
 
 </body>
 </html>
-
-

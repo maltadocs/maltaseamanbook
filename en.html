@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Maltese Seaman’s Passport — for Ukrainian Seafarers</title>
-  <meta name="description" content="Official issuance of the Maltese Seaman’s Passport for Ukrainian seafarers. Fast, remote, and with worldwide delivery.">
+  <title>Malta Seaman’s Book – for Ukrainian seafarers</title>
+  <meta name="description" content="Official issuance of Malta Seaman’s Book for Ukrainian seafarers. Fast, remote, and worldwide delivery.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="media/favicon.png" type="image/png">
   <style>
@@ -14,7 +14,6 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      transition: background-color 0.5s ease;
     }
     h1, h2 {
       margin-bottom: 20px;
@@ -23,22 +22,6 @@
       max-width: 100%;
       margin: 20px 0;
       border-radius: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.3s;
-    }
-    ul, p, form, .social-icons {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.5s;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
     ul {
       padding-left: 20px;
@@ -52,11 +35,6 @@
     }
     a:hover {
       text-decoration: underline;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #cccccc;
     }
     form {
       margin-top: 30px;
@@ -73,7 +51,6 @@
       background-color: #00aaff;
       color: white;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #0077cc;
@@ -83,9 +60,20 @@
       margin-right: 10px;
       vertical-align: middle;
     }
+    .top-links {
+      float: right;
+      margin-top: -160px;
+      margin-right: 10px;
+      text-align: right;
+    }
     select {
       margin-bottom: 20px;
       padding: 6px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cccccc;
     }
   </style>
 </head>
@@ -97,22 +85,32 @@
     <option value="de.html">🇩🇪 Deutsch</option>
   </select>
 
-  <h1>Maltese Seaman’s Passport (Seaman’s Book Malta)</h1>
+  <h1>Malta Seaman’s Book</h1>
 
   <img src="media/1malta.png" alt="Malta Promo">
 
-  <p>Get an international maritime document — the Seaman’s Passport of the Republic of Malta. Suitable for Ukrainian seafarers, issued remotely, legally, and delivered worldwide.</p>
+  <div class="top-links">
+    <a href="faq.html" style="color:#00aaff; font-weight: bold;">❓ FAQ</a><br>
+    <a href="https://t.me/maltaseamans" target="_blank">
+      <img src="media/telegram.svg" alt="Telegram" width="24">
+    </a>
+    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
+      <img src="media/instagram.svg" alt="Instagram" width="24">
+    </a>
+  </div>
+
+  <p>Get an international maritime document — the Seaman’s Book of the Republic of Malta. Suitable for Ukrainian seafarers, issued remotely, legally, and delivered worldwide.</p>
 
   <ul>
     <li>✔️ International maritime document</li>
     <li>✔️ Legal issuance without travel</li>
     <li>✔️ Processing time: 3–5 weeks</li>
-    <li>✔️ Courier delivery worldwide</li>
+    <li>✔️ Worldwide courier delivery</li>
     <li>✔️ Support at every stage</li>
   </ul>
 
   <h2>Contact</h2>
-  <p>🇨🇭 Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
+  <p><img src="https://flagcdn.com/w40/ch.png" alt="🇨🇭" width="24"> Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
   <div class="social-icons">
     <a href="https://t.me/maltaseamans" target="_blank">
       <img src="media/telegram.svg" alt="Telegram">
@@ -129,23 +127,23 @@
     width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
   </iframe>
 
-  <h2>Submit an Application</h2>
+  <h2>Application Form</h2>
   <form action="https://formspree.io/f/mgvygdaj" method="POST">
     <input type="hidden" name="_redirect" value="https://www.maltaseaman.com/thank-you.html">
-    <input type="text" name="name" placeholder="Your name" required>
+    <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Email" required>
     <textarea name="message" placeholder="Message" required></textarea>
     <label>
       <input type="checkbox" required>
-      I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a>
+      I agree to the <a href="privacy-en.html" target="_blank">Privacy Policy</a>
     </label>
-    <button type="submit">Send</button>
+    <button type="submit">Submit</button>
   </form>
 
   <footer>
-  © 2025 Malta Seaman Team | <a href="privacy.html">Privacy Policy</a> | <a href="faq.html">FAQ</a>
-</footer>
-
+    © 2025 Malta Seaman Team | <a href="privacy-en.html">Privacy Policy</a> | <a href="faq.html">FAQ</a>
+  </footer>
 
 </body>
 </html>
+

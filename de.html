@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +15,6 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      transition: background-color 0.5s ease;
     }
     h1, h2 {
       margin-bottom: 20px;
@@ -23,22 +23,6 @@
       max-width: 100%;
       margin: 20px 0;
       border-radius: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.3s;
-    }
-    ul, p, form, .social-icons {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.5s;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
     ul {
       padding-left: 20px;
@@ -52,11 +36,6 @@
     }
     a:hover {
       text-decoration: underline;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #cccccc;
     }
     form {
       margin-top: 30px;
@@ -73,7 +52,6 @@
       background-color: #00aaff;
       color: white;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
     button:hover {
       background-color: #0077cc;
@@ -83,11 +61,58 @@
       margin-right: 10px;
       vertical-align: middle;
     }
+    .top-links {
+      float: right;
+      margin-top: -160px;
+      margin-right: 10px;
+      text-align: right;
+    }
     select {
       margin-bottom: 20px;
       padding: 6px;
     }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1B4F72;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+    }
+    #cookie-banner button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
   </style>
+  <script>
+    function acceptCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "true");
+    }
+    function declineCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "false");
+    }
+    window.onload = function() {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
+      }
+    };
+  </script>
 </head>
 <body>
 
@@ -100,6 +125,16 @@
   <h1>Maltesischer Seemannspass (Seaman’s Book Malta)</h1>
 
   <img src="media/1malta.png" alt="Malta Promo">
+
+  <div class="top-links">
+    <a href="faq.html" style="color:#00aaff; font-weight: bold;">❓ FAQ</a><br>
+    <a href="https://t.me/malataseaman" target="_blank">
+      <img src="media/telegram.svg" alt="Telegram" width="24">
+    </a>
+    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
+      <img src="media/instagram.svg" alt="Instagram" width="24">
+    </a>
+  </div>
 
   <p>Erhalten Sie ein internationales Seefahrtsdokument – den Seemannspass der Republik Malta. Geeignet für ukrainische Seeleute, remote ausgestellt, legal und weltweit geliefert.</p>
 
@@ -114,11 +149,11 @@
   <h2>Kontakt</h2>
   <p><img src="https://flagcdn.com/w40/ch.png" alt="🇨🇭" width="24"> Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
   <div class="social-icons">
-    <a href="https://t.me/maltaseamans" target="_blank">
-      <img src="media/telegram.svg" alt="Telegram" width="32">
+    <a href="https://t.me/malataseaman" target="_blank">
+      <img src="media/telegram.svg" alt="Telegram">
     </a>
     <a href="https://www.instagram.com/maltaseamans/" target="_blank">
-      <img src="media/instagram.svg" alt="Instagram" width="32">
+      <img src="media/instagram.svg" alt="Instagram">
     </a>
   </div>
   <p>Email: <a href="mailto:info@maltaseaman.com">info@maltaseaman.com</a></p>
@@ -132,4 +167,26 @@
   <h2>Kontaktformular</h2>
   <form action="https://formspree.io/f/mgvygdaj" method="POST">
     <input type="hidden" name="_redirect" value="https://www.maltaseaman.com/thank-you.html">
-    <input type="text" name="name" placeholder
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Nachricht" required></textarea>
+    <label>
+      <input type="checkbox" required>
+      Ich stimme der <a href="privacy-de.html" target="_blank">Datenschutzrichtlinie</a> zu
+    </label>
+    <button type="submit">Senden</button>
+  </form>
+
+  <footer>
+    © 2025 Malta Seaman Team | <a href="privacy-de.html">Datenschutzrichtlinie</a> | <a href="faq.html">FAQ</a>
+  </footer>
+
+  <div id="cookie-banner" style="display:none;">
+    Wir verwenden Cookies zur Verbesserung der Website. <a href="privacy-de.html" style="color:#00aaff;">Mehr erfahren</a>
+    <button onclick="acceptCookies()">Akzeptieren</button>
+    <button onclick="declineCookies()">Ablehnen</button>
+  </div>
+
+</body>
+</html>
+

@@ -3,8 +3,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>FAQ — Часто возникающие вопросы</title>
-  <meta name="description" content="Ответы на часто задаваемые вопросы о паспорте моряка Мальты для украинских моряков.">
+  <title>FAQ — Часто задаваемые вопросы</title>
+  <meta name="description" content="Ответы на часто задаваемые вопросы о паспорте моряка Мальты. Условия, сроки, документы, доставка.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="media/favicon.png" type="image/png">
   <style>
@@ -15,28 +15,9 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
-      transition: background-color 0.5s ease;
     }
     h1, h2 {
       margin-bottom: 20px;
-    }
-    p, ul, li, .contact-block {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1s ease forwards;
-      animation-delay: 0.5s;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 12px;
     }
     a {
       color: #00aaff;
@@ -45,69 +26,107 @@
     a:hover {
       text-decoration: underline;
     }
-    .contact-block {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #07406e;
-      border-radius: 8px;
-    }
-    .social-icons img {
-      width: 32px;
-      margin-right: 10px;
-      vertical-align: middle;
+    .faq-item {
+      margin-bottom: 30px;
     }
     footer {
       margin-top: 40px;
       font-size: 14px;
       color: #cccccc;
     }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1B4F72;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+    }
+    #cookie-banner button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+    .top-nav {
+      margin-bottom: 20px;
+      text-align: right;
+    }
   </style>
+  <script>
+    function acceptCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "true");
+    }
+    function declineCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "false");
+    }
+    window.onload = function() {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
+      }
+    };
+  </script>
 </head>
 <body>
 
-  <h1>❓ FAQ — Часто возникающие вопросы</h1>
+  <div class="top-nav">
+    <a href="index.html">🛳️ На главную</a>
+    &nbsp;&nbsp;
+    <a href="https://t.me/malataseaman" target="_blank">
+      <img src="media/telegram.svg" alt="Telegram" width="24">
+    </a>
+    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
+      <img src="media/instagram.svg" alt="Instagram" width="24">
+    </a>
+  </div>
 
-  <ul>
-    <li><strong>Это легально?</strong><br>
-    Да. Паспорт моряка выдается официально морскими властями Республики Мальта через аккредитованного представителя в Швейцарии. Документ оформляется в соответствии с международными морскими конвенциями (IMO, MLC 2006).</li>
+  <h1>❓ Часто задаваемые вопросы</h1>
 
-    <li><strong>Это официальный паспорт моряка?</strong><br>
-    Да. Это международный Seaman’s Book, признанный большинством судоходных компаний и портов по всему миру.</li>
+  <div class="faq-item">
+    <h2>Какие документы нужны для оформления?</h2>
+    <p>Паспорт, фото, сертификаты моряка (если есть), контракт с судоходной компанией (если есть).</p>
+  </div>
 
-    <li><strong>Можно ли выехать из Украины с этим документом?</strong><br>
-    При наличии контракта с судоходной компанией, выезд возможен на законных основаниях как моряк. Мы подскажем, как правильно оформить пакет документов.</li>
+  <div class="faq-item">
+    <h2>Сколько времени занимает оформление?</h2>
+    <p>Обычно 3–5 недель с момента подачи заявки.</p>
+  </div>
 
-    <li><strong>Нужно ли ехать на Мальту?</strong><br>
-    Нет. Всё оформляется дистанционно. Ваше физическое присутствие не требуется.</li>
+  <div class="faq-item">
+    <h2>Как происходит доставка?</h2>
+    <p>Документ доставляется курьером по всему миру. Мы предоставим трек-номер.</p>
+  </div>
 
-    <li><strong>Какие документы нужны?</strong><br>
-    Загранпаспорт, морские сертификаты (если есть), фото, контракт (по возможности — поможет ускорить процесс).</li>
+  <div class="faq-item">
+    <h2>Нужно ли ехать в Мальту?</h2>
+    <p>Нет. Всё оформляется дистанционно, легально и официально.</p>
+  </div>
 
-    <li><strong>Сколько времени занимает оформление?</strong><br>
-    От 3 до 5 недель с момента подачи полного пакета документов. Мы контролируем процесс на каждом этапе.</li>
-
-    <li><strong>Как я получу готовый документ?</strong><br>
-    📦 Паспорт отправляется международной курьерской службой прямо к вам домой. Упаковка надёжная, доставка — с отслеживанием.</li>
-  </ul>
-
-  <div class="contact-block">
-    <h2>📬 Остались вопросы?</h2>
-    <p>Свяжитесь с нами напрямую — мы отвечаем быстро и по делу:</p>
-    <div class="social-icons">
-      <a href="https://t.me/maltaseamans" target="_blank">
-        <img src="media/telegram.svg" alt="Telegram">
-      </a>
-      <a href="https://www.instagram.com/maltaseamans/" target="_blank">
-        <img src="media/instagram.svg" alt="Instagram">
-      </a>
-    </div>
-    <p>Email: <a href="mailto:info@maltaseaman.com">info@maltaseaman.com</a></p>
+  <div class="faq-item">
+    <h2>Какие страны признают этот документ?</h2>
+    <p>Паспорт моряка Мальты — это международный документ, признанный большинством морских администраций.</p>
   </div>
 
   <footer>
-    © 2025 Malta Seaman Team | <a href="privacy.html">Политика конфиденциальности</a>
+    © 2025 Malta Seaman Team | <a href="privacy.html">Политика конфиденциальности</a> | <a href="faq.html">FAQ</a>
   </footer>
+
+  <div id="cookie-banner" style="display:none;">
+    Мы используем cookies для улучшения работы сайта. <a href="privacy.html" style="color:#00aaff;">Подробнее</a>
+    <button onclick="acceptCookies()">Принять</button>
+    <button onclick="declineCookies()">Отклонить</button>
+  </div>
 
 </body>
 </html>
+
 

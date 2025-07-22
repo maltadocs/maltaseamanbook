@@ -159,17 +159,19 @@
     <li>✔️ Срок оформления: 3–5 недель</li>
     <li>✔️ Доставка по всему миру курьером</li>
     <li>✔️ Поддержка на всех этапах</li>
-  </ul>  <h2>Контакт</h2>
-  <p><img src="https://flagcdn.com/w40/ch.png" alt="🇨🇭" width="24"> Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
-  <div class="social-icons">
-    <a href="https://t.me/malataseaman" target="_blank">
-      <img src="media/telegram.svg" alt="Telegram">
-    </a>
-    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
-      <img src="media/instagram.svg" alt="Instagram">
-    </a>
-  </div>
-  <p>Email: <a href="mailto:info@maltaseaman.com">info@maltaseaman.com</a></p>
+  </ul>  <div class="contact-form">
+  <form action="https://formspree.io/f/mgvygdaj" method="POST">
+    <input type="text" name="_gotcha" style="display:none">
+    <label for="name">Имя</label>
+    <input type="text" id="name" name="name" required>
+    <label for="phone">Телефон</label>
+    <input type="tel" id="phone" name="phone" required pattern=".{6,}" title="Введите номер телефона">
+    <label for="message">Сообщение</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+
 
   <h2>Карта</h2>
   <iframe

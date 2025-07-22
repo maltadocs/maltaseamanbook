@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -119,30 +118,7 @@
       color: white;
       cursor: pointer;
     }
-    @media screen and (max-width: 600px) {
-      h1 { font-size: 1.6rem; }
-      .contact-form, iframe { width: 100%; }
-      button { width: 100%; }
-      .social-icons a { font-size: 1.5rem; }
-    }
-  </style>
-  <script>
-    function acceptCookies() {
-      document.getElementById("cookie-banner").style.display = "none";
-      localStorage.setItem("cookiesAccepted", "true");
-    }
-    function declineCookies() {
-      document.getElementById("cookie-banner").style.display = "none";
-      localStorage.setItem("cookiesAccepted", "false");
-    }
-    window.onload = function() {
-      if (!localStorage.getItem("cookiesAccepted")) {
-        document.getElementById("cookie-banner").style.display = "block";
-      }
-    };
-  </script>
-</head>
-<body>
+    @media screen and (max-width: 600px) {<body>
   <header>
     <h1>Паспорт моряка Мальты (Seaman’s Book Malta)</h1>
     <p class="lead">Оформление документов для украинских моряков за границей</p>
@@ -172,8 +148,12 @@
     </div>
 
     <div class="social-icons">
-      <a href="https://t.me/malataseaman" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-      <a href="https://instagram.com/maltaseaman" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/malataseaman" target="_blank" title="Telegram">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://instagram.com/maltaseaman" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
 
     <h2>Карта</h2>
@@ -191,3 +171,5 @@
   </footer>
 </body>
 </html>
+
+      h

@@ -8,7 +8,7 @@
 
   <!-- ✅ SEO -->
   <title>Паспорт моряка Мальты — онлайн оформление | MaltaSeaman</title>
-  <meta name="description" content="Оформление морского паспорта Seaman’s Book Мальты для украинских моряков за границей. Быстро, легально и с доставкой." />
+  <meta name="description" content="Оформление Seaman’s Book Мальты для украинских моряков за границей. Быстро, легально, доставка по всему миру." />
   <meta name="keywords" content="Seamans Book, Malta Seaman, Морской диплом, документы моряка, Украина, моряки за границей" />
   <meta name="author" content="MaltaDocs" />
 
@@ -19,7 +19,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://maltaseaman.com/preview.jpg" />
 
+  <!-- ✅ Favicon -->
   <link rel="icon" href="/favicon.ico" />
+
+  <!-- ✅ Font Awesome для иконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     body {
@@ -104,6 +108,29 @@
       cursor: pointer;
     }
 
+    .social-icons {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.8rem;
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #005fa3;
+    }
+
+    .flag {
+      display: block;
+      margin: 1rem auto;
+      width: 60px;
+      height: auto;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -121,6 +148,7 @@
 
 <body>
   <header>
+    <img src="/malta-flag.png" alt="Флаг Мальты" class="flag" />
     <h1>Паспорт моряка Мальты</h1>
     <p class="lead">Оформление документов для украинских моряков, находящихся за границей</p>
     <a href="#contact" class="cta-button">Связаться с нами</a>
@@ -147,6 +175,11 @@
         <button type="submit">Отправить</button>
       </form>
     </section>
+
+    <div class="social-icons">
+      <a href="https://t.me/maltaseaman" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      <a href="https://instagram.com/maltaseaman" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
   </main>
 
   <footer>
@@ -154,5 +187,3 @@
   </footer>
 </body>
 </html>
-
-

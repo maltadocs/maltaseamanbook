@@ -1,190 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Паспорт моряка Мальты — для украинских моряков</title>
-  <meta name="google-site-verification" content="aII3F3b8X68-Hqe5OZrj1YBYeqNQ45polMTj9weWqqA" />
-  <meta name="description" content="Официальное оформление паспорта моряка Республики Мальта для украинских моряков. Быстро, дистанционно и с доставкой по всему миру.">
-  <meta name="keywords" content="паспорт моряка Мальта, seaman's book Malta, морской документ, оформление морякам, украинские моряки, malta seaman">
-  <meta name="author" content="Malta Seaman Team">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Паспорт моряка Мальты — дистанционное оформление">
-  <meta property="og:description" content="Официальное оформление морского документа для украинских моряков. Быстро, безопасно, с доставкой.">
-  <meta property="og:image" content="https://www.maltaseaman.com/media/preview.jpg">
-  <meta property="og:url" content="https://www.maltaseaman.com/index.html">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Паспорт моряка Мальты — быстро и дистанционно">
-  <meta name="twitter:description" content="Получите международный морской документ без поездок. Быстрое оформление и поддержка.">
-  <meta name="twitter:image" content="https://www.maltaseaman.com/media/preview.jpg">
-  <link rel="icon" href="media/favicon.png" type="image/png">
-  <script>
-    if (location.hostname.startsWith('www.')) {
-      location.href = location.protocol + '//' + location.hostname.replace('www.', '') + location.pathname + location.search;
-    }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Паспорт моряка Мальты — онлайн оформление | MaltaSeaman</title>
+  <meta name="description" content="Оформление Seaman’s Book Мальты для украинских моряков за границей. Быстро, легально, доставка по всему миру." />
+  <meta name="keywords" content="Seamans Book, Malta Seaman, Морской диплом, документы моряка, Украина, моряки за границей" />
+  <meta name="author" content="MaltaDocs" />
+  <meta property="og:title" content="Паспорт моряка Мальты" />
+  <meta property="og:description" content="Документы моряка онлайн — поддержка для украинских моряков за границей." />
+  <meta property="og:url" content="https://maltaseaman.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://maltaseaman.com/preview.jpg" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
-      background-color: #0A3D62;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f7fc;
+      color: #222;
     }
-    h1, h2 {
-      margin-bottom: 20px;
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
     }
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-      border-radius: 8px;
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+    p.lead {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 0.5rem 0 1.5rem;
     }
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding: 0;
     }
     li {
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
-    a {
-      color: #00aaff;
-      text-decoration: none;
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
-    }    .social-icons img {
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .contact-form {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin: 2rem 0;
+    }
+    .social-icons img {
       width: 32px;
       margin-right: 10px;
       vertical-align: middle;
     }
-    .top-links {
-      float: right;
-      margin-top: -160px;
-      margin-right: 10px;
-      text-align: right;
-    }
-    select {
-      margin-bottom: 20px;
-      padding: 6px;
-    }
     footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #cccccc;
-    }
-    #cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: #1B4F72;
-      color: #ffffff;
-      padding: 15px;
       text-align: center;
-      font-size: 14px;
-      z-index: 9999;
-    }
-    #cookie-banner button {
-      margin-left: 10px;
-      padding: 6px 12px;
-      background-color: #00aaff;
-      border: none;
-      border-radius: 4px;
-      color: white;
-      cursor: pointer;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 3rem;
     }
   </style>
-  <script>
-    function acceptCookies() {
-      document.getElementById("cookie-banner").style.display = "none";
-      localStorage.setItem("cookiesAccepted", "true");
-    }
-    function declineCookies() {
-      document.getElementById("cookie-banner").style.display = "none";
-      localStorage.setItem("cookiesAccepted", "false");
-    }
-    window.onload = function() {
-      if (!localStorage.getItem("cookiesAccepted")) {
-        document.getElementById("cookie-banner").style.display = "block";
-      }
-    };
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Malta Seaman Team",
-    "url": "https://www.maltaseaman.com",
-    "logo": "https://www.maltaseaman.com/media/favicon.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "info@maltaseaman.com",
-      "contactType": "Customer Support",
-      "availableLanguage": ["Russian", "English", "German"]
-    },
-    "sameAs": [
-      "https://t.me/malataseaman",
-      "https://www.instagram.com/maltaseamans/"
-    ]
-  }
-  </script>
 </head>
 <body>
-  <select onchange="window.location.href=this.value">
-    <option value="index.html">🇷🇺 Русский</option>
-    <option value="en.html">🇬🇧 English</option>
-    <option value="de.html">🇩🇪 Deutsch</option>
-  </select>
+  <header>
+    <h1>Паспорт моряка Мальты (Seaman’s Book Malta)</h1>
+    <p class="lead">Оформление документов для украинских моряков за границей</p>
+  </header>
 
-  <h1>Паспорт моряка Мальты (Seaman’s Book Malta)</h1>
+  <main>
+    <ul>
+      <li>✔️ Срок оформления: 3–5 недель</li>
+      <li>✔️ Доставка по всему миру курьером</li>
+      <li>✔️ Поддержка на всех этапах</li>
+    </ul>
 
-  <img src="media/1malta.png" alt="Malta Promo">
+    <h2>Контакт</h2>
+    <p><img src="https://flagcdn.com/w40/ch.png" alt="🇨🇭" width="24"> Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich</p>
 
-  <div class="top-links">
-    <a href="faq.html" style="color:#00aaff; font-weight: bold;">❓ Часто задаваемые вопросы</a><br>
-    <a href="https://t.me/malataseaman" target="_blank">
-      <img src="media/telegram.svg" alt="Telegram" width="24">
-    </a>
-    <a href="https://www.instagram.com/maltaseamans/" target="_blank">
-      <img src="media/instagram.svg" alt="Instagram" width="24">
-    </a>
-  </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mgvygdaj" method="POST">
+        <input type="text" name="_gotcha" style="display:none">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required pattern=".{6,}" title="Введите номер телефона">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
 
-  <p>Получите международный морской документ — паспорт моряка Республики Мальта. Подходит для украинских моряков, оформляется дистанционно, легально и с доставкой по всему миру.</p>
+    <div class="social-icons">
+      <a href="https://t.me/malataseaman" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      </a>
+    </div>
 
-  <ul>
-    <li>✔️ Международный морской документ</li>
-    <li>✔️ Легальное оформление без поездок</li>
-    <li>✔️ Срок оформления: 3–5 недель</li>
-    <li>✔️ Доставка по всему миру курьером</li>
-    <li>✔️ Поддержка на всех этапах</li>
-  </ul>  <div class="contact-form">
-  <form action="https://formspree.io/f/mgvygdaj" method="POST">
-    <input type="text" name="_gotcha" style="display:none">
-    <label for="name">Имя</label>
-    <input type="text" id="name" name="name" required>
-    <label for="phone">Телефон</label>
-    <input type="tel" id="phone" name="phone" required pattern=".{6,}" title="Введите номер телефона">
-    <label for="message">Сообщение</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    <button type="submit">Отправить</button>
-  </form>
-</div>
+    <h2>Карта</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+    <div id="cookie-banner">
+      Мы используем cookies для улучшения работы сайта.
+      <button onclick="acceptCookies()">Принять</button>
+      <button onclick="declineCookies()">Отклонить</button>
+    </div>
+  </main>
 
-  <h2>Карта</h2>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.947!2d8.539183!3d47.370835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0b1e2f1e3f%3A0x2e3f3f3f3f3f3f3f!2sBahnhofstrasse%2010%2C%208001%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1680000000000"
-    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-  <div id="cookie-banner">
-    Мы используем cookies для улучшения работы сайта.
-    <button onclick="acceptCookies()">Принять</button>
-    <button onclick="declineCookies()">Отклонить</button>
-  </div>
-
+  <footer>
+    © 2025 MaltaSeaman.com — все права защищены
+  </footer>
 </body>
 </html>
-
-

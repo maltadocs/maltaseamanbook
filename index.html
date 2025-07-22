@@ -1,8 +1,10 @@
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Паспорт моряка Мальты — онлайн оформление | MaltaSeaman</title>
+  <title>Паспорт моряка Мальты — оформление онлайн | MaltaSeaman</title>
   <meta name="description" content="Сотни украинских моряков ищут законный способ продолжить работу в море. Мы предлагаем надёжное решение — паспорт моряка Республики Мальта." />
   <meta name="keywords" content="Seamans Book, Malta Seaman, Морской диплом, документы моряка, Украина, моряки за границей" />
   <meta name="author" content="MaltaDocs" />
@@ -17,7 +19,6 @@
   <meta name="twitter:description" content="Получите международный морской документ без поездок. Быстрое оформление и поддержка." />
   <meta name="twitter:image" content="media/preview.jpg" />
   <link rel="icon" href="media/favicon-maltese-cross.png" type="image/png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -138,7 +139,8 @@
         document.getElementById("cookie-banner").style.display = "block";
       }
     };
-  </script><body>
+  </script>
+</head><body>
   <header>
     <h1>Паспорт моряка Мальты (Seaman’s Book Malta)</h1>
     <p class="lead">Надёжное решение для украинских моряков</p>
@@ -189,6 +191,43 @@
     </p>
 
     <div class="contact-form">
-      <form
-</head>
+      <form action="https://formspree.io/f/mgvygdaj" method="POST">
+        <input type="text" name="_gotcha" style="display:none">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" required pattern=".{6,}" title="Введите номер телефона">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://t.me/malataseaman" target="_blank" title="Telegram">
+        <img src="media/telegram.svg" alt="Telegram" width="24" />
+      </a>
+      <a href="https://instagram.com/maltaseaman" target="_blank" title="Instagram">
+        <img src="media/instagram.svg" alt="Instagram" width="24" />
+      </a>
+    </div>
+
+    <h2>Карта</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.4942065263827!2d8.535954476785792!3d47.36879701339143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0b48aa1bc9%3A0x45dcdf51bb289769!2sBahnhofstrasse%2010%2C%208001%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sde!2sch!4v1710168728383"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div id="cookie-banner">
+      Мы используем cookies для улучшения работы сайта.
+      <button onclick="acceptCookies()">Принять</button>
+      <button onclick="declineCookies()">Отклонить</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 MaltaSeaman.com — все права защищены
+  </footer>
+</body>
+</html>
 

@@ -2,12 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Паспорт моряка Мальты — онлайн оформление | MaltaSeaman</title>
   <meta name="description" content="Оформление Seaman’s Book Мальты для украинских моряков за границей. Быстро, легально, доставка по всему миру." />
   <meta name="keywords" content="Seamans Book, Malta Seaman, Морской диплом, документы моряка, Украина, моряки за границей" />
   <meta name="author" content="MaltaDocs" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Паспорт моряка Мальты" />
   <meta property="og:description" content="Документы моряка онлайн — поддержка для украинских моряков за границей." />
   <meta property="og:url" content="https://maltaseaman.com" />
@@ -85,7 +84,43 @@
       color: #666;
       margin-top: 3rem;
     }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #1B4F72;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      z-index: 9999;
+    }
+    #cookie-banner button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      background-color: #00aaff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
   </style>
+  <script>
+    function acceptCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "true");
+    }
+    function declineCookies() {
+      document.getElementById("cookie-banner").style.display = "none";
+      localStorage.setItem("cookiesAccepted", "false");
+    }
+    window.onload = function() {
+      if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
+      }
+    };
+  </script>
 </head>
 <body>
   <header>
@@ -140,3 +175,4 @@
   </footer>
 </body>
 </html>
+

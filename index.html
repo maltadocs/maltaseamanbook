@@ -140,6 +140,7 @@
       }
     };
   </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <header>
@@ -205,6 +206,7 @@
       Bahnhofstrasse 10 / Eingang Börsenstrasse 18<br>CH - 8001 Zürich
     </p>
 
+    <!-- ФОРМА С ЗАЩИТОЙ -->
     <div class="contact-form">
       <form action="https://formspree.io/f/mgvygdaj" method="POST">
         <input type="text" name="_gotcha" style="display:none">
@@ -214,6 +216,7 @@
         <input type="tel" id="phone" name="phone" required pattern=".{6,}" title="Введите номер телефона">
         <label for="message">Сообщение</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="g-recaptcha" data-sitekey="6LfeOporAAAAAN57mtAtb3516VQ5azrkn75cNfAQ" style="margin-top: 1rem;"></div>
         <button type="submit">Отправить</button>
       </form>
     </div>
@@ -235,5 +238,12 @@
 
     <div id="cookie-banner">
       Мы используем cookies для улучшения работы сайта.
-      <button onclick="acceptCookies()">Принять</button>  
+      <button onclick="acceptCookies()">Принять</button>
+    </div>
+  </main>
+  <footer>
+    © 2025 MaltaSeaman. Все права защищены.
+  </footer>
+</body>
+</html>
 
